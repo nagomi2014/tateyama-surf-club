@@ -301,13 +301,17 @@ ul, ol {
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   background: var(--ocean-gradient);
   color: var(--white);
   text-align: center;
   overflow: hidden;
   padding-top: var(--header-height);
+}
+
+.hero__content {
+  padding-top: 60px;
 }
 
 .hero__bg {
