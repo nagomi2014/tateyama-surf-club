@@ -301,8 +301,9 @@ ul, ol {
   position: relative;
   min-height: 100vh;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
   background: var(--ocean-gradient);
   color: var(--white);
   text-align: center;
@@ -311,12 +312,9 @@ ul, ol {
 }
 
 .hero__content {
-  padding-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-  width: 100%;
+  position: relative;
+  z-index: 2;
+  padding: 100px 24px 0;
 }
 
 .hero__bg {
@@ -379,8 +377,10 @@ ul, ol {
   gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
   margin-top: auto;
-  padding-bottom: 16px;
+  margin-bottom: 48px;
 }
 
 .hero__scroll {
