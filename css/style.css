@@ -369,7 +369,7 @@ ul, ol {
 .hero__lead {
   font-size: 1.25rem;
   max-width: 600px;
-  margin: 0 auto 40px;
+  margin: 0 auto 0;
   opacity: 0.9;
   line-height: 1.8;
 }
@@ -380,7 +380,7 @@ ul, ol {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: auto;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 
 .hero__scroll {
