@@ -43,8 +43,12 @@
     </div>
   </header>
 
-  <!-- Hero -->
+  <!-- ============================
+       HERO - フルスクリーン写真
+       images/hero.jpg を差し替えてください
+       ============================ -->
   <section class="hero">
+    <div class="hero__bg" style="background-image: url('images/hero.jpg');"></div>
     <div class="hero__overlay"></div>
     <div class="hero__content">
       <div class="hero__badge">Since 2006 - 千葉県館山市</div>
@@ -61,65 +65,73 @@
     </div>
   </section>
 
-  <!-- Stats -->
+  <!-- ============================
+       活動紹介 - 写真カード4枚
+       各 images/activity-*.jpg を差し替えてください
+       ============================ -->
   <section class="section">
     <div class="container">
-      <div class="stats">
-        <div>
-          <div class="stat__number">2006</div>
-          <div class="stat__label">設立年</div>
-        </div>
-        <div>
-          <div class="stat__number">127+</div>
-          <div class="stat__label">クラブ員数</div>
-        </div>
-        <div>
-          <div class="stat__number">7-9月</div>
-          <div class="stat__label">パトロール期間</div>
-        </div>
-        <div>
-          <div class="stat__number">全年齢</div>
-          <div class="stat__label">対象年齢</div>
-        </div>
+      <p class="section-subtitle">Activities</p>
+      <h2 class="section-title">私たちの活動</h2>
+      <p class="section-lead">海の安全を守るパトロールから、次世代を育てるプログラムまで。</p>
+      <div class="card-grid card-grid--4">
+        <a href="activities.html#patrol" class="photo-card">
+          <div class="photo-card__img" data-label="パトロール写真" style="background-image: url('images/activity-patrol.jpg');"></div>
+          <div class="photo-card__body">
+            <h3 class="photo-card__title">パトロール</h3>
+            <p class="photo-card__text">夏季海水浴場の監視・救助活動</p>
+          </div>
+        </a>
+        <a href="activities.html#competition" class="photo-card">
+          <div class="photo-card__img" data-label="競技大会写真" style="background-image: url('images/activity-competition.jpg');"></div>
+          <div class="photo-card__body">
+            <h3 class="photo-card__title">競技</h3>
+            <p class="photo-card__text">ライフセービング競技大会出場</p>
+          </div>
+        </a>
+        <a href="junior.html" class="photo-card">
+          <div class="photo-card__img" data-label="ジュニア活動写真" style="background-image: url('images/activity-junior.jpg');"></div>
+          <div class="photo-card__body">
+            <h3 class="photo-card__title">普及部・育成部</h3>
+            <p class="photo-card__text">幼児〜高校生の育成プログラム</p>
+          </div>
+        </a>
+        <a href="activities.html#environment" class="photo-card">
+          <div class="photo-card__img" data-label="ビーチクリーン写真" style="background-image: url('images/activity-environment.jpg');"></div>
+          <div class="photo-card__body">
+            <h3 class="photo-card__title">環境・地域貢献</h3>
+            <p class="photo-card__text">ビーチクリーン・地域イベント</p>
+          </div>
+        </a>
       </div>
     </div>
   </section>
 
-  <!-- Activities Overview -->
+  <!-- ============================
+       フォトギャラリー - 固定（差し替えのみ）
+       images/gallery-*.jpg を差し替えてください
+       ============================ -->
   <section class="section section--gray">
     <div class="container">
-      <p class="section-subtitle">Activities</p>
-      <h2 class="section-title">主な活動内容</h2>
-      <p class="section-lead">海の安全を守るパトロール活動から、次世代のライフセーバーを育てるジュニアプログラムまで、幅広い活動を行っています。</p>
-      <div class="card-grid card-grid--4">
-        <div class="icon-card">
-          <div class="icon-card__icon">&#x1F6DF;</div>
-          <h3 class="icon-card__title">パトロール</h3>
-          <p class="icon-card__text">夏季海水浴場の監視・救助活動。水辺の安全を第一線で守ります。</p>
-        </div>
-        <div class="icon-card">
-          <div class="icon-card__icon">&#x1F3C6;</div>
-          <h3 class="icon-card__title">競技活動</h3>
-          <p class="icon-card__text">ライフセービング競技大会への出場。日頃の訓練の成果を発揮します。</p>
-        </div>
-        <div class="icon-card">
-          <div class="icon-card__icon">&#x1F466;</div>
-          <h3 class="icon-card__title">普及部・育成部</h3>
-          <p class="icon-card__text">幼児から高校生まで、年齢に応じたプログラムで次世代を育成します。</p>
-        </div>
-        <div class="icon-card">
-          <div class="icon-card__icon">&#x1F30A;</div>
-          <h3 class="icon-card__title">環境・地域貢献</h3>
-          <p class="icon-card__text">ビーチクリーン活動や地域イベントへの参加を通じて社会に貢献します。</p>
-        </div>
+      <p class="section-subtitle">Gallery</p>
+      <h2 class="section-title">活動の様子</h2>
+      <div class="photo-grid photo-grid--masonry" style="margin-top: 40px;">
+        <div class="photo-grid__item photo-grid__item--tall" data-label="パトロール中の写真" style="background-image: url('images/gallery-1.jpg');"></div>
+        <div class="photo-grid__item" data-label="トレーニング写真" style="background-image: url('images/gallery-2.jpg');"></div>
+        <div class="photo-grid__item" data-label="ジュニア活動写真" style="background-image: url('images/gallery-3.jpg');"></div>
+        <div class="photo-grid__item" data-label="大会写真" style="background-image: url('images/gallery-4.jpg');"></div>
+        <div class="photo-grid__item photo-grid__item--wide" data-label="集合写真" style="background-image: url('images/gallery-5.jpg');"></div>
       </div>
-      <div style="text-align: center; margin-top: 40px;">
-        <a href="activities.html" class="btn btn--outline">活動内容をもっと見る</a>
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="https://www.instagram.com/tateyama_surf_club/" target="_blank" rel="noopener" class="btn btn--outline">Instagramでもっと見る</a>
       </div>
     </div>
   </section>
 
-  <!-- About Preview -->
+  <!-- ============================
+       クラブ紹介 - 写真+テキスト（固定）
+       images/about-beach.jpg を差し替えてください
+       ============================ -->
   <section class="section">
     <div class="container">
       <div class="two-col">
@@ -128,20 +140,59 @@
           <h2 class="section-title" style="text-align: left;">館山の海を、<br>もっと安全に。</h2>
           <p style="margin-bottom: 16px;">館山サーフクラブは、2006年に設立された千葉県館山市を拠点とするライフセービングクラブです。</p>
           <p style="margin-bottom: 16px;">「水辺の事故をゼロに」という理念のもと、海水浴場パトロール、ライフセービング競技、ジュニア育成、環境保全など多岐にわたる活動を展開しています。</p>
-          <p style="margin-bottom: 24px;">幼児からシニアまで、年齢を問わず活動に参加できるのが当クラブの特徴です。</p>
+          <p style="margin-bottom: 24px;">幼児からシニアまで、年齢を問わず活動に参加できます。</p>
+          <div class="stats" style="text-align: center; margin-bottom: 24px;">
+            <div>
+              <div class="stat__number" style="font-size: 2rem;">2006</div>
+              <div class="stat__label">設立年</div>
+            </div>
+            <div>
+              <div class="stat__number" style="font-size: 2rem;">127+</div>
+              <div class="stat__label">クラブ員</div>
+            </div>
+            <div>
+              <div class="stat__number" style="font-size: 2rem;">7-9月</div>
+              <div class="stat__label">パトロール</div>
+            </div>
+            <div>
+              <div class="stat__number" style="font-size: 2rem;">全年齢</div>
+              <div class="stat__label">対象</div>
+            </div>
+          </div>
           <a href="about.html" class="btn btn--primary">クラブについて詳しく</a>
         </div>
-        <div class="img-placeholder">活動風景の写真</div>
+        <div class="img-placeholder" style="background-image: url('images/about-beach.jpg'); background-size: cover; background-position: center; border: none; color: transparent;">クラブ活動の写真</div>
       </div>
     </div>
   </section>
 
-  <!-- News -->
+  <!-- ============================
+       ジュニア紹介 - 写真バナー（固定）
+       images/junior-banner.jpg を差し替えてください
+       ============================ -->
+  <section class="section" style="padding: 0;">
+    <div class="photo-banner" style="border-radius: 0; min-height: 450px; background-image: url('images/junior-banner.jpg');">
+      <div class="photo-banner__content" style="max-width: var(--max-width); margin: 0 auto; padding: 48px 24px;">
+        <p style="font-size: 0.875rem; letter-spacing: 0.1em; opacity: 0.8; margin-bottom: 8px;">JUNIOR PROGRAM</p>
+        <h2 class="photo-banner__title" style="font-size: 2rem;">お子さまの「海の力」を<br>育てませんか？</h2>
+        <p class="photo-banner__text" style="max-width: 500px; margin-bottom: 24px;">普及部（満3歳〜小学生）と育成部（中学生・高校生）。<br>泳ぎが得意でなくても大丈夫。海の楽しさと安全を一緒に学びましょう。</p>
+        <a href="junior.html" class="btn btn--white">プログラム詳細</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================
+       ニュース - ★ここだけ更新する★
+       新しいニュースは上に追加してください
+       ============================ -->
   <section class="section section--gray">
     <div class="container">
       <p class="section-subtitle">News</p>
       <h2 class="section-title">お知らせ</h2>
-      <div class="news-list" style="margin-top: 40px;">
+      <div style="max-width: 800px; margin: 40px auto 0;">
+
+        <!-- ===== ニュースここから（上に追加） ===== -->
+
         <div class="news-item">
           <span class="news-item__date">2026.04.12</span>
           <span class="news-item__tag">育成部</span>
@@ -167,37 +218,27 @@
           <span class="news-item__tag">総会</span>
           <span class="news-item__title">2026年度 定期総会を開催しました</span>
         </div>
+
+        <!-- ===== ニュースここまで ===== -->
+
+      </div>
+      <div style="text-align: center; margin-top: 32px;">
+        <a href="news.html" class="btn btn--outline">お知らせ一覧</a>
       </div>
     </div>
   </section>
 
-  <!-- Junior CTA -->
-  <section class="section">
-    <div class="container">
-      <div class="two-col two-col--reverse">
-        <div class="img-placeholder">ジュニア活動の写真</div>
-        <div>
-          <p class="section-subtitle" style="text-align: left;">Junior Program</p>
-          <h2 class="section-title" style="text-align: left;">お子さまの「海の力」を<br>育てませんか？</h2>
-          <p style="margin-bottom: 16px;">普及部（満3歳〜小学生）と育成部（中学生・高校生）の2つのプログラムで、水辺の安全知識と体力を身につけます。</p>
-          <p style="margin-bottom: 24px;">泳ぎが得意でなくても大丈夫。海の楽しさと安全を、一緒に学びましょう。</p>
-          <a href="junior.html" class="btn btn--primary">プログラム詳細</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA -->
+  <!-- CTA（固定） -->
   <section class="cta">
     <h2 class="cta__title">一緒に海を守りませんか？</h2>
-    <p class="cta__text">経験不問。ライフセービングに興味がある方、海が好きな方、お子さまに水辺の安全を学ばせたい方、お気軽にお問い合わせください。</p>
+    <p class="cta__text">経験不問。海が好きな方、お子さまに水辺の安全を学ばせたい方、お気軽にお問い合わせください。</p>
     <div class="cta__buttons">
       <a href="join.html" class="btn btn--white">入会案内を見る</a>
       <a href="contact.html" class="btn btn--outline" style="border-color: rgba(255,255,255,0.5); color: #fff;">お問い合わせ</a>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- Footer（固定） -->
   <footer class="footer">
     <div class="container">
       <div class="footer__grid">
@@ -246,7 +287,6 @@
   </footer>
 
   <button class="scroll-top" aria-label="ページの先頭へ">&uarr;</button>
-
   <script src="js/main.js"></script>
 </body>
 </html>
