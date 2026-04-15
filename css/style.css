@@ -1391,6 +1391,26 @@ ul, ol {
   overflow: hidden;
 }
 
+/* --- Sodateru Slider --- */
+.sodateru-slider {
+  position: relative;
+  background: #000;
+}
+
+.sodateru-slider__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1.2s ease;
+}
+
+.sodateru-slider__img--active {
+  opacity: 1;
+}
+
 .photo-banner::after {
   content: '';
   position: absolute;

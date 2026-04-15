@@ -54,6 +54,17 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // --- Sodateru Slider ---
+  const sliderImgs = document.querySelectorAll('.sodateru-slider__img');
+  if (sliderImgs.length > 1) {
+    let current = 0;
+    setInterval(() => {
+      sliderImgs[current].classList.remove('sodateru-slider__img--active');
+      current = (current + 1) % sliderImgs.length;
+      sliderImgs[current].classList.add('sodateru-slider__img--active');
+    }, 5000);
+  }
+
   // --- Active nav link ---
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav__link').forEach(link => {
