@@ -155,6 +155,11 @@ ul, ol {
   transform: translateY(-2px);
 }
 
+.btn--sm {
+  padding: 8px 20px;
+  font-size: 0.875rem;
+}
+
 .btn--outline {
   background: transparent;
   color: var(--primary);
@@ -1532,5 +1537,25 @@ ul, ol {
 @media (max-width: 480px) {
   .photo-grid--2, .photo-grid--3, .photo-grid--4 {
     grid-template-columns: 1fr;
+  }
+}
+
+/* --- Join page responsive --- */
+@media (max-width: 768px) {
+  .price-card {
+    padding: 24px 16px;
+  }
+  .price-card__price {
+    font-size: 2rem;
+  }
+  .cta__buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+  .cta__buttons .btn {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
   }
 }
