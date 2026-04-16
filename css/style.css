@@ -920,6 +920,7 @@ ul, ol {
     transition: transform 0.3s;
     overflow-y: auto;
     padding: 24px;
+    z-index: 1000;
   }
   .nav.active {
     transform: translateX(0);
