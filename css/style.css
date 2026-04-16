@@ -191,7 +191,7 @@ ul, ol {
   height: var(--header-height);
   background: rgba(255,255,255,0.95);
   backdrop-filter: blur(10px);
-  z-index: 1000;
+  z-index: 9999;
   border-bottom: 1px solid var(--gray-200);
   transition: box-shadow 0.3s;
 }
@@ -280,7 +280,7 @@ ul, ol {
   padding: 8px;
   background: none;
   border: none;
-  z-index: 1001;
+  z-index: 10000;
 }
 
 .hamburger span {
@@ -920,7 +920,7 @@ ul, ol {
     transition: transform 0.3s;
     overflow-y: auto;
     padding: 24px;
-    z-index: 1000;
+    z-index: 9998;
   }
   .nav.active {
     transform: translateX(0);
